@@ -1,0 +1,20 @@
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.boton{
+    border:1px solid black;
+    padding: 5px 10px;
+    border-radius: 2px;
+    width: 200px;
+    margin: 0 auto;
+}
