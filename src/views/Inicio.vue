@@ -12,7 +12,11 @@
       lo han llenado de vida. Inspirado en el proyecto
       Alma do Alfama de Camila Watson, Lisboa 2021. <strong>Más info...</strong>
     </div>
+
+    <div class="boton" @click="abrirMapa">Mapa</div>
   </div>
+
+  
 
 </template>
 
@@ -37,6 +41,11 @@ export default {
 </script>
 
 <style>
+  .inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 
   .inicio h1{
@@ -44,16 +53,19 @@ export default {
     font-size: 60px;
     font-weight: 300;
     letter-spacing: 3px;
+    padding-bottom: 20px;
   }
 
   .resumenProjecto{
     font-size: 13px;
-    margin: 0px 40px;
+    margin: 10px 40px;
     text-align: justify;
     text-justify: inter-word;
     letter-spacing: 2px;
     line-height: 1.2rem;
+    margin-bottom: 70px;
   }
+
 
 
 </style>
