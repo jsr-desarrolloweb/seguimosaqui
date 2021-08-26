@@ -6,13 +6,13 @@
       En un barrio que pierde a sus vecinas y
       vecinos año tras año debido a la turistificación
       masiva y al  número descontrolado de alojamientos
-      turísticos ( entre otros problemas ), surge esta
+      turísticos (entre otros problemas), surge esta
       idea para dar la voz y el lugar a las que siempre
       lo han llenado de vida. Inspirado en el proyecto
-      Alma do Alfama de Camila Watson, Lisboa 2021. <strong>Más info...</strong>
+      Alma do Alfama de Camila Watson, Lisboa 2021. <strong> <div class="mas-info" @click="router.push({name: 'Proyecto'})">Más info...</div> </strong>
     </div>
 
-    <div class="boton">Mapa</div>
+    <div @click="router.push({name: 'Mapa'})" class="boton">Mapa</div>
 
   </div>
 
@@ -59,10 +59,13 @@ export default {
 
   .resumenProjecto{
     margin: 50px 0;
+     text-align: justify;
+  text-justify: inter-word;
     
   }
 
-
-
+  .mas-info{
+    cursor: pointer;
+  }
 
 </style>
