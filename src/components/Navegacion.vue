@@ -42,7 +42,8 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 25px;
+        height: 10%;
+        padding: 0 25px;
     }
 
     nav{

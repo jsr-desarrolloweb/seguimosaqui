@@ -1,8 +1,7 @@
 <template>
   <div class="inicio">
-    
-    <!-- Titulo principal -->
-    <h1>Seguimos <br> Aquí</h1>
+
+    <h1>Seguimos <br> aquí</h1>
     <div class="resumenProjecto">
       En un barrio que pierde a sus vecinas y
       vecinos año tras año debido a la turistificación
@@ -13,7 +12,8 @@
       Alma do Alfama de Camila Watson, Lisboa 2021. <strong>Más info...</strong>
     </div>
 
-    <div class="boton" @click="abrirMapa">Mapa</div>
+    <div class="boton">Mapa</div>
+
   </div>
 
   
@@ -31,40 +31,37 @@ export default {
   setup(){
     const router = useRouter()
 
-    const abrirMapa = () => {
-      router.push({name: 'Mapa'})
-    }
+    // const abrirMapa = () => {
+    //   router.push({name: 'Mapa'})
+    // }
 
-    return {abrirMapa}
+    return { router}
   }
 }
 </script>
 
 <style>
+
   .inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+    height: 90%;
   }
 
-
   .inicio h1{
-    margin: 10px 0;
     font-size: 60px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    padding-bottom: 20px;
+    font-weight: 200;
+    margin: 5px 0;
   }
 
   .resumenProjecto{
-    font-size: 13px;
-    margin: 10px 40px;
-    text-align: justify;
-    text-justify: inter-word;
-    letter-spacing: 2px;
-    line-height: 1.2rem;
-    margin-bottom: 70px;
+    margin: 50px 0;
+    
   }
+
 
 
 
