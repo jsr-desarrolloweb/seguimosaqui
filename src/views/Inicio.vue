@@ -47,20 +47,22 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 25px;
+    
     height: 90%;
+    /* background-image: url('~@/assets/wallaper2.jpg');
+    background-size: cover; */
   }
 
   .inicio h1{
     font-size: 60px;
     font-weight: 200;
-    margin: 5px 0;
+    
   }
 
   .resumenProjecto{
-    margin: 50px 0;
-     text-align: justify;
-  text-justify: inter-word;
+    margin: 50px 25px;
+    text-align: justify;
+    text-justify: inter-word;
     
   }
 

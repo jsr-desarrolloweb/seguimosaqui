@@ -5,7 +5,9 @@
 
       <!-- Esto será el componente Lista de Vecinos -->
       <div class="tarjeta-vecino">
-          <div class="img-vecino"></div>
+          <div class="img-vecino">
+            <img src="../assets/familia1.jpg" alt="">
+          </div>
           <div class="info-vecino">
             <h3>Familia Pepperoni Ramoni</h3>
             <p>
@@ -54,10 +56,14 @@ export default {
 
 <style>
     .vecinos{
-        margin: 0 25px;
+        margin: 20px 25px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .vecinos h2{
+      margin: 10px 0;
     }
 
     .tarjeta-vecino{
@@ -72,9 +78,14 @@ export default {
     .img-vecino{
         border: 1px solid black;
         width: 100%;
-        height: 160px;
+        height: 200px;
         text-align: center;
         border-top: none;
+    }
+
+    .img-vecino img{
+      width: inherit;
+      height: inherit;
     }
 
     .info-vecino{
