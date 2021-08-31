@@ -9,7 +9,7 @@
       turísticos (entre otros problemas), surge esta
       idea para dar la voz y el lugar a las que siempre
       lo han llenado de vida. Inspirado en el proyecto
-      Alma do Alfama de Camila Watson, Lisboa 2021. <strong> <div class="mas-info" @click="router.push({name: 'Proyecto'})">Más info...</div> </strong>
+      Alma do Alfama de Camila Watson, Lisboa 2021. <strong> <div class="masInfo" @click="router.push({name: 'Proyecto'})">Más info...</div> </strong>
     </div>
 
     <div @click="router.push({name: 'Mapa'})" class="boton">Mapa</div>
@@ -46,16 +46,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    /* justify-content: center;    */
     height: 90%;
-    /* background-image: url('~@/assets/wallaper2.jpg');
-    background-size: cover; */
+
   }
 
   .inicio h1{
     font-size: 60px;
     font-weight: 200;
+    margin-top: 50px;
     
   }
 
@@ -66,7 +65,7 @@ export default {
     
   }
 
-  .mas-info{
+  .masInfo{
     cursor: pointer;
   }
 

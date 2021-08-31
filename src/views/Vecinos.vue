@@ -2,99 +2,35 @@
   <div class="vecinos">
       <h2>El Barrio y su Gente</h2>
       
+      <Vecino />
+      <Vecino />
+      <Vecino />
+      
 
-      <!-- Esto será el componente Lista de Vecinos -->
-      <div class="tarjeta-vecino">
-          <div class="img-vecino">
-            <img src="../assets/familia1.jpg" alt="">
-          </div>
-          <div class="info-vecino">
-            <h3>Familia Pepperoni Ramoni</h3>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dolorum sit provident atque quisquam voluptas voluptatum
-            id quia...
-            </p>
-          </div>
-          <div class="ubi-vecino boton">Ver en Mapa</div>
-      </div>
 
-            <div class="tarjeta-vecino">
-          <div class="img-vecino"></div>
-          <div class="info-vecino">
-            <h3>Familia Los Alba</h3>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dolorum sit provident atque quisquam voluptas voluptatum
-            id quia...
-            </p>
-          </div>
-          <div class="ubi-vecino boton">Ver en Mapa</div>
-      </div>
-
-            <div class="tarjeta-vecino">
-          <div class="img-vecino"></div>
-          <div class="info-vecino">
-            <h3>Familia Patos Parque Genovés</h3>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dolorum sit provident atque quisquam voluptas voluptatum
-            id quia...
-            </p>
-          </div>
-          <div class="ubi-vecino boton">Ver en Mapa</div>
-      </div>
 
   </div>
 </template>
 
 <script>
-export default {
+import Vecino from '../components/Vecino.vue'
 
+export default {
+  components: { Vecino }
 }
 </script>
 
 <style>
-    .vecinos{
-        margin: 20px 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .vecinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    /* height: 90%; */
+  }
 
-    .vecinos h2{
-      margin: 10px 0;
-    }
-
-    .tarjeta-vecino{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 15px;
-        border: 1px solid black;
-        margin-bottom: 20px;
-    }
-
-    .img-vecino{
-        border: 1px solid black;
-        width: 100%;
-        height: 200px;
-        text-align: center;
-        border-top: none;
-    }
-
-    .img-vecino img{
-      width: inherit;
-      height: inherit;
-    }
-
-    .info-vecino{
-        padding: 0 15px;
-    }
-
-    .info-vecino h3, p {
-        margin: 10px 0;
-        text-align: justify;
-        text-justify: inter-word;
-    }
+  .vecinos h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
 </style>
